@@ -1,0 +1,19 @@
+{
+    "service": {
+      "id": "page",
+      "name": "page",
+      "port": 5000,
+      "check": {
+        "id": "api",
+        "name": "HTTP API on port 5000",
+        "http": "http://localhost:5000/ping",
+        "tls_skip_verify": false,
+        "method": "GET",
+        "interval": "30s",
+        "timeout": "5s"
+      },
+      "connect": {
+        "sidecar_service": {}
+      }
+    }
+  }

@@ -1,0 +1,26 @@
+{
+    "service": {
+      "id": "nginx",
+      "name": "nginx",
+      "port": 80,
+      "check": {
+        "id": "api",
+        "name": "HTTP API on port 80",
+        "http": "http://localhost:80/",
+        "tls_skip_verify": false,
+        "method": "GET",
+        "interval": "30s",
+        "timeout": "5s"
+      },
+      "connect": {
+        "sidecar_service": {
+          "proxy": {
+            "upstreams": [{
+               "destination_name": "page",
+               "local_bind_port": 5000
+            }]
+          }
+        }
+      }
+    }
+  }

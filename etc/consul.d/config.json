@@ -1,0 +1,27 @@
+{
+    "bootstrap_expect": 3,
+    "client_addr": "0.0.0.0",
+    "datacenter": "On-Premise",
+    "data_dir": "/var/consul",
+    "domain": "consul",
+    "enable_script_checks": true,
+    "dns_config": {
+        "enable_truncate": true,
+        "only_passing": true
+    },
+    "enable_syslog": false,
+    "encrypt": "qC/OFwRpL4iFrJo67O0Esw==",
+    "leave_on_terminate": true,
+    "log_level": "INFO",
+    "rejoin_after_leave": true,
+    "server": true,
+    "start_join": [
+        "xxx.xxx.xxx.xxx",
+        "xxx.xxx.xxx.xxx",
+        "xxx.xxx.xxx.xxx"
+    ],
+    "ui": true,
+    "connect": {
+        "enabled": true
+    }
+}
