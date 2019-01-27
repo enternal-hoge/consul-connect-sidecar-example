@@ -12,9 +12,13 @@ Hashicorp Consul Connect Sidecar Example
 ## Install
 
 [Install Consul](https://www.consul.io/docs/install/index.html)
+
 [Install Docker](https://docs.docker.com/install/linux/docker-ce/binaries/)
+
 [Install docker-compose](https://docs.docker.com/compose/install/)
+
 [Install Golang](https://golang.org/doc/install)
+
 
 Install Python Framework flask according to the platform of each LInux OS.
 
